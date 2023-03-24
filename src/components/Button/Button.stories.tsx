@@ -15,6 +15,27 @@ type Story = StoryObj<typeof Button>;
 
 export const Primary: Story = {
   args: {
-    children: "Button",
+    children: "Primary Button",
+  },
+};
+
+export const Secondary: Story = {
+  args: {
+    children: "Secondary Button",
+    color: "secondary",
+  },
+};
+
+export const Danger: Story = {
+  args: {
+    children: "Danger Button",
+    color: "danger",
+  },
+};
+
+export const Warning: Story = {
+  args: {
+    children: "Warning Button",
+    color: "warning",
   },
 };
