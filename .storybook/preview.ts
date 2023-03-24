@@ -1,4 +1,9 @@
 import type { Preview } from "@storybook/react";
+import _JSXStyle from "styled-jsx/style";
+
+if (typeof global !== "undefined") {
+  Object.assign(global, { _JSXStyle });
+}
 
 const preview: Preview = {
   parameters: {
