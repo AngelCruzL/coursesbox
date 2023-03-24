@@ -15,7 +15,7 @@ export type ButtonProps = {
   /**
    * Optional click handler
    */
-  onClick?: () => void;
+  onClick: () => void;
 };
 
 export const getColors = (color?: ButtonColor): SerializedStyles => {
