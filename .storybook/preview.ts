@@ -1,4 +1,6 @@
 import type { Preview } from "@storybook/react";
+import { themes } from "@storybook/theming";
+
 import _JSXStyle from "styled-jsx/style";
 
 if (typeof global !== "undefined") {
@@ -11,10 +13,13 @@ const preview: Preview = {
     controls: {
       matchers: {
         color: /(background|color)$/i,
-        date: /Date$/,
-      },
+        date: /Date$/
+      }
     },
-  },
+    docs: {
+      theme: themes.dark
+    }
+  }
 };
 
 export default preview;
